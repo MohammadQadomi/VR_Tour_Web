@@ -1,0 +1,337 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "imagePath": "file:///C:/Unity%20Projects/Virtual%20Tour%20Web/Assets/Skybox/Demo/1.JPG",
+      "voiceOverPath": "",
+      "arrows": [
+        {
+          "text": "",
+          "positionX": 1461.59375,
+          "positionY": 94.29776,
+          "positionZ": 292.749268,
+          "rotationX": -0.0244272649,
+          "rotationY": 0.633563161,
+          "rotationZ": 0.0200197846,
+          "rotationW": 0.7730461,
+          "scaleX": 2.81211662,
+          "scaleY": 2.81211662,
+          "scaleZ": 2.81211615,
+          "destinationId": 2,
+          "isHidden": false
+        }
+      ],
+      "hotspots": [],
+      "desks": []
+    },
+    {
+      "id": 2,
+      "imagePath": "file:///C:/Unity%20Projects/Virtual%20Tour%20Web/Assets/Skybox/Demo/2.JPG",
+      "voiceOverPath": "",
+      "arrows": [
+        {
+          "text": "",
+          "positionX": -1497.04126,
+          "positionY": 13.3917236,
+          "positionZ": -31.7581482,
+          "rotationX": -0.003128171,
+          "rotationY": -0.7145589,
+          "rotationZ": -0.00319523364,
+          "rotationW": 0.699561059,
+          "scaleX": 2.81211662,
+          "scaleY": 2.81211662,
+          "scaleZ": 2.81211615,
+          "destinationId": 3,
+          "isHidden": false
+        }
+      ],
+      "hotspots": [],
+      "desks": []
+    },
+    {
+      "id": 3,
+      "imagePath": "file:///C:/Unity%20Projects/Virtual%20Tour%20Web/Assets/Skybox/Demo/3.JPG",
+      "voiceOverPath": "",
+      "arrows": [
+        {
+          "text": "",
+          "positionX": 1456.864,
+          "positionY": -155.069366,
+          "positionZ": 296.1518,
+          "rotationX": 0.0402210131,
+          "rotationY": 0.6319152,
+          "rotationZ": -0.0328675061,
+          "rotationW": 0.7732952,
+          "scaleX": 2.48711634,
+          "scaleY": 2.48711634,
+          "scaleZ": 2.48711586,
+          "destinationId": 2,
+          "isHidden": false
+        },
+        {
+          "text": "",
+          "positionX": -1468.35986,
+          "positionY": -179.436951,
+          "positionZ": -230.186523,
+          "rotationX": 0.0390270278,
+          "rotationY": -0.7585217,
+          "rotationZ": 0.045621708,
+          "rotationW": 0.64887625,
+          "scaleX": 2.81211662,
+          "scaleY": 2.81211662,
+          "scaleZ": 2.81211615,
+          "destinationId": 4,
+          "isHidden": false
+        }
+      ],
+      "hotspots": [],
+      "desks": []
+    },
+    {
+      "id": 4,
+      "imagePath": "file:///C:/Unity%20Projects/Virtual%20Tour%20Web/Assets/Skybox/Demo/6.JPG",
+      "voiceOverPath": "",
+      "arrows": [
+        {
+          "text": "",
+          "positionX": 331.105133,
+          "positionY": -942.947632,
+          "positionZ": -1114.09412,
+          "rotationX": 0.0481105559,
+          "rotationY": 0.9326733,
+          "rotationZ": -0.330759972,
+          "rotationW": 0.135661438,
+          "scaleX": 4.937117,
+          "scaleY": 4.937117,
+          "scaleZ": 4.937117,
+          "destinationId": 3,
+          "isHidden": false
+        },
+        {
+          "text": "",
+          "positionX": -1322.64172,
+          "positionY": -276.387817,
+          "positionZ": -637.014343,
+          "rotationX": 0.04943011,
+          "rotationY": -0.843071938,
+          "rotationZ": 0.07867099,
+          "rotationW": 0.529714346,
+          "scaleX": 2.81211662,
+          "scaleY": 2.81211662,
+          "scaleZ": 2.81211615,
+          "destinationId": 5,
+          "isHidden": false
+        }
+      ],
+      "hotspots": [],
+      "desks": []
+    },
+    {
+      "id": 5,
+      "imagePath": "file:///C:/Unity%20Projects/Virtual%20Tour%20Web/Assets/Skybox/Demo/8.JPG",
+      "voiceOverPath": "",
+      "arrows": [
+        {
+          "text": "",
+          "positionX": 1385.78369,
+          "positionY": -153.993744,
+          "positionZ": 542.799561,
+          "rotationX": 0.0425652564,
+          "rotationY": 0.5628505,
+          "rotationZ": -0.0290412754,
+          "rotationW": 0.824951053,
+          "scaleX": 2.81211662,
+          "scaleY": 2.81211662,
+          "scaleZ": 2.81211615,
+          "destinationId": 4,
+          "isHidden": false
+        },
+        {
+          "text": "",
+          "positionX": -1480.30078,
+          "positionY": -215.603424,
+          "positionZ": 44.6390457,
+          "rotationX": 0.0518313944,
+          "rotationY": -0.6945502,
+          "rotationZ": 0.05029199,
+          "rotationW": 0.715810239,
+          "scaleX": 2.81211662,
+          "scaleY": 2.81211662,
+          "scaleZ": 2.81211615,
+          "destinationId": 6,
+          "isHidden": false
+        }
+      ],
+      "hotspots": [],
+      "desks": []
+    },
+    {
+      "id": 6,
+      "imagePath": "file:///C:/Unity%20Projects/Virtual%20Tour%20Web/Assets/Skybox/Demo/9.JPG",
+      "voiceOverPath": "",
+      "arrows": [
+        {
+          "text": "",
+          "positionX": -161.039429,
+          "positionY": -202.052521,
+          "positionZ": 1475.36633,
+          "rotationX": 0.0675036758,
+          "rotationY": -0.0542098,
+          "rotationZ": 0.00367318839,
+          "rotationW": 0.99623847,
+          "scaleX": 2.81211662,
+          "scaleY": 2.81211662,
+          "scaleZ": 2.81211615,
+          "destinationId": 5,
+          "isHidden": false
+        },
+        {
+          "text": "",
+          "positionX": -1365.94482,
+          "positionY": -573.936,
+          "positionZ": 221.355011,
+          "rotationX": -0.148749813,
+          "rotationY": 0.635604858,
+          "rotationZ": -0.126584783,
+          "rotationW": -0.7468977,
+          "scaleX": 5.06211662,
+          "scaleY": 5.06211662,
+          "scaleZ": 5.06211567,
+          "destinationId": 7,
+          "isHidden": false
+        }
+      ],
+      "hotspots": [],
+      "desks": []
+    },
+    {
+      "id": 7,
+      "imagePath": "file:///C:/Unity%20Projects/Virtual%20Tour%20Web/Assets/Skybox/Demo/10.JPG",
+      "voiceOverPath": "",
+      "arrows": [
+        {
+          "text": "",
+          "positionX": 1388.55737,
+          "positionY": -548.3706,
+          "positionZ": 91.1170044,
+          "rotationX": 0.136192679,
+          "rotationY": 0.6715593,
+          "rotationZ": -0.127548635,
+          "rotationW": 0.7170713,
+          "scaleX": 6.86211538,
+          "scaleY": 6.86211538,
+          "scaleZ": 6.86211443,
+          "destinationId": 8,
+          "isHidden": false
+        }
+      ],
+      "hotspots": [],
+      "desks": []
+    },
+    {
+      "id": 8,
+      "imagePath": "file:///C:/Unity%20Projects/Virtual%20Tour%20Web/Assets/Skybox/Demo/11.JPG",
+      "voiceOverPath": "",
+      "arrows": [
+        {
+          "text": "",
+          "positionX": -1386.89331,
+          "positionY": -569.7351,
+          "positionZ": 5.83826447,
+          "rotationX": 0.1372247,
+          "rotationY": -0.6922591,
+          "rotationZ": 0.1366483,
+          "rotationW": 0.6951792,
+          "scaleX": 2.81211662,
+          "scaleY": 2.81211662,
+          "scaleZ": 2.81211615,
+          "destinationId": 9,
+          "isHidden": false
+        }
+      ],
+      "hotspots": [],
+      "desks": []
+    },
+    {
+      "id": 9,
+      "imagePath": "file:///C:/Unity%20Projects/Virtual%20Tour%20Web/Assets/Skybox/Demo/12.JPG",
+      "voiceOverPath": "",
+      "arrows": [
+        {
+          "text": "",
+          "positionX": -248.775391,
+          "positionY": -416.598083,
+          "positionZ": 1414.82959,
+          "rotationX": 0.140129372,
+          "rotationY": -0.0860535055,
+          "rotationZ": 0.0122259893,
+          "rotationW": 0.98631084,
+          "scaleX": 2.81211662,
+          "scaleY": 2.81211662,
+          "scaleZ": 2.81211615,
+          "destinationId": 10,
+          "isHidden": false
+        }
+      ],
+      "hotspots": [],
+      "desks": []
+    },
+    {
+      "id": 10,
+      "imagePath": "file:///C:/Unity%20Projects/Virtual%20Tour%20Web/Assets/Skybox/Demo/13.JPG",
+      "voiceOverPath": "",
+      "arrows": [
+        {
+          "text": "",
+          "positionX": -1185.935,
+          "positionY": -402.72522,
+          "positionZ": -818.630859,
+          "rotationX": -0.06312508,
+          "rotationY": 0.8772541,
+          "rotationZ": -0.120278008,
+          "rotationW": -0.4604061,
+          "scaleX": 2.81211662,
+          "scaleY": 2.81211662,
+          "scaleZ": 2.81211615,
+          "destinationId": 9,
+          "isHidden": false
+        }
+      ],
+      "hotspots": [
+        {
+          "text": "HR",
+          "positionX": -544.996948,
+          "positionY": -214.149109,
+          "positionZ": 1378.302,
+          "rotationX": 0.07041839,
+          "rotationY": -0.186680585,
+          "rotationZ": 0.013416741,
+          "rotationW": 0.9798019,
+          "scaleX": 1.02245712,
+          "scaleY": 1.02245772,
+          "scaleZ": 1.02245712,
+          "isHidden": false
+        }
+      ],
+      "desks": [
+        {
+          "id": 0,
+          "employeeName": "Bahi Sawalha",
+          "employeeDepartment": "HR",
+          "employeeDescription": "HR Director",
+          "positionX": -188.5686,
+          "positionY": -167.2999,
+          "positionZ": -1476.67493,
+          "rotationX": -0.05352265,
+          "rotationY": 0.994990051,
+          "rotationZ": -0.05256614,
+          "rotationW": -0.06608319,
+          "scaleX": 0.783972263,
+          "scaleY": 0.7839724,
+          "scaleZ": 0.783972263,
+          "isHidden": false
+        }
+      ]
+    }
+  ]
+}
