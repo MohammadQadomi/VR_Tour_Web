@@ -83,7 +83,9 @@ public class Arrow
 
     public bool isHidden = false;
 
-    public Arrow(string text, Vector3 position, Quaternion rotation, Vector3 scale,int destinationId, bool isHidden)
+    public string color ;
+
+    public Arrow(string text, Vector3 position, Quaternion rotation, Vector3 scale,int destinationId, bool isHidden, string color)
     {
         this.text = text;
 
@@ -103,6 +105,8 @@ public class Arrow
         this.destinationId = destinationId;
 
         this.isHidden = isHidden;
+
+        this.color = color;
     }
 }
 
@@ -124,6 +128,7 @@ public class Hotspot
 
     public bool isHidden = false;
 
+    //public Color color = Color.white;
     public Hotspot(string text, Vector3 position, Quaternion rotation, Vector3 scale, bool isHidden)
     {
         this.text = text;

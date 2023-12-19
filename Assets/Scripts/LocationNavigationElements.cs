@@ -52,7 +52,10 @@ public class LocationNavigationElements : MonoBehaviour
 
             dirctionalHotspot.transform.rotation = Quaternion.LookRotation(dirctionalHotspot.transform.position - Camera.main.transform.position);// Set the whole object rotation
             dirctionalHotspot.SetVisualsRotation(new Quaternion(arrow.rotationX, arrow.rotationY, arrow.rotationZ, arrow.rotationW));// Set the visuals ("Arrow") rotation
-
+            // Set arrow color
+            Color color;
+            if (ColorUtility.TryParseHtmlString("#"+arrow.color, out color))
+                dirctionalHotspot.SetColor(color);
         }
 
         // Instantiate the hotspots
@@ -66,6 +69,7 @@ public class LocationNavigationElements : MonoBehaviour
 
             nonDirctionalHotspot.transform.rotation = Quaternion.LookRotation(nonDirctionalHotspot.transform.position - Camera.main.transform.position);// Set the whole object rotation
             nonDirctionalHotspot.SetVisualsRotation(new Quaternion(hotspot.rotationX, hotspot.rotationY, hotspot.rotationZ, hotspot.rotationW));// Set the visuals ("Hotspot") rotation
+            //nonDirctionalHotspot.SetColor(hotspot.color);
         }
 
         // Instantiate the desks

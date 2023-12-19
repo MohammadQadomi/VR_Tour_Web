@@ -79,7 +79,7 @@ public class APITest : MonoBehaviour
             List<Arrow> arrows = new List<Arrow>();
             for (int j = 0; j < body[i]["arrows"].Count; j++)
             {
-                arrows.Add(new Arrow(body[i]["arrows"][j]["text"], new Vector3(body[i]["arrows"][j]["positionX"], body[i]["arrows"][j]["positionY"], body[i]["arrows"][j]["positionZ"]), new Quaternion(body[i]["arrows"][j]["rotationX"], body[i]["arrows"][j]["rotationY"], body[i]["arrows"][j]["rotationZ"], body[i]["arrows"][j]["rotationW"]), new Vector3(body[i]["arrows"][j]["scaleX"], body[i]["arrows"][j]["scaleY"], body[i]["arrows"][j]["scaleZ"]), body[i]["arrows"][j]["destinationId"], body[i]["arrows"][j]["isHidden"]));
+                arrows.Add(new Arrow(body[i]["arrows"][j]["text"], new Vector3(body[i]["arrows"][j]["positionX"], body[i]["arrows"][j]["positionY"], body[i]["arrows"][j]["positionZ"]), new Quaternion(body[i]["arrows"][j]["rotationX"], body[i]["arrows"][j]["rotationY"], body[i]["arrows"][j]["rotationZ"], body[i]["arrows"][j]["rotationW"]), new Vector3(body[i]["arrows"][j]["scaleX"], body[i]["arrows"][j]["scaleY"], body[i]["arrows"][j]["scaleZ"]), body[i]["arrows"][j]["destinationId"], body[i]["arrows"][j]["isHidden"], body[i]["arrows"][j]["color"]));
             }
 
             List<Hotspot> hotspots = new List<Hotspot>();

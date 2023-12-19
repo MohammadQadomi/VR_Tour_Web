@@ -9,6 +9,8 @@ public class DirectionalHotspotProperties : MonoBehaviour
     public DirectionalHotspot selectedObject;
     [SerializeField] TMP_InputField inputField_1;
     [SerializeField] TMP_InputField inputField_2;
+    [SerializeField] InputField inputField_3;
+    [SerializeField] Image colorImage;
     [SerializeField] Toggle toggle;
 
     void Start()
@@ -19,6 +21,7 @@ public class DirectionalHotspotProperties : MonoBehaviour
     private void OnEnable()
     {
         DeactivateAllSiblings();
+        UpdatePropertiesValues();
     }
 
     public void UpdateSelectedObjectValues()
@@ -26,6 +29,13 @@ public class DirectionalHotspotProperties : MonoBehaviour
         selectedObject.SetTitleText(inputField_1.text);
         selectedObject.SetDestinationId(inputField_2.text);
         selectedObject.SetIsHidden(toggle.isOn);
+
+        Color color;
+        if (ColorUtility.TryParseHtmlString("#"+inputField_3.text, out color))
+        {
+            selectedObject.SetColor(color);
+            print($"Changed arrow color to {color}");
+        }
     }
 
     public void UpdatePropertiesValues()
@@ -33,6 +43,8 @@ public class DirectionalHotspotProperties : MonoBehaviour
         inputField_1.text = selectedObject.GetTitleText();
         inputField_2.text = selectedObject.destinationId.ToString();
         toggle.isOn = selectedObject.isHidden;
+        inputField_3.text = ColorUtility.ToHtmlStringRGBA(selectedObject.GetColor());
+        colorImage.color = selectedObject.GetColor();
     }
 
     void DeactivateAllSiblings()
@@ -44,8 +56,6 @@ public class DirectionalHotspotProperties : MonoBehaviour
                 transform.parent.GetChild(i).gameObject.SetActive(false);
             }
         }
-
-        UpdatePropertiesValues();// Set initial values for the fields
     }
 
     public void Activate(DirectionalHotspot selectedObject)
@@ -70,5 +80,4 @@ public class DirectionalHotspotProperties : MonoBehaviour
     {
         Destroy(selectedObject.gameObject);
     }
-
 }

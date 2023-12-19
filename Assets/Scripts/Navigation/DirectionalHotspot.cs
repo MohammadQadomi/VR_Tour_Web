@@ -162,4 +162,11 @@ public class DirectionalHotspot : MonoBehaviour, IPointerEnterHandler, IPointerE
             transform.GetChild(i).gameObject.SetActive(!hide);
         }
     }
+
+    public void SetColor(Color color)
+    {
+        visuals.GetComponentInChildren<Image>().color = color;
+    }
+
+    public Color GetColor() => visuals.GetComponentInChildren<Image>().color;
 }

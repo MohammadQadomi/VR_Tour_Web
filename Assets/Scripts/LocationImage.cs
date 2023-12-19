@@ -138,7 +138,7 @@ public class LocationImage : MonoBehaviour
 
         foreach (var item in transform.GetChild(0).GetComponentsInChildren<DirectionalHotspot>())
         {
-            arrows.Add(new Arrow(item.GetTitleText(), item.transform.position, item.GetVisualsRotation(), item.transform.localScale, item.destinationId, item.isHidden));
+            arrows.Add(new Arrow(item.GetTitleText(), item.transform.position, item.GetVisualsRotation(), item.transform.localScale, item.destinationId, item.isHidden, ColorUtility.ToHtmlStringRGBA(item.GetColor())));
         }
 
         foreach (var item in transform.GetChild(0).GetComponentsInChildren<NonDirectionalHotspot>())

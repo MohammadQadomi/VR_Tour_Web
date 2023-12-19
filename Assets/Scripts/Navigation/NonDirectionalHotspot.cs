@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class NonDirectionalHotspot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -94,4 +95,8 @@ public class NonDirectionalHotspot : MonoBehaviour, IPointerEnterHandler, IPoint
 
     public Quaternion GetVisualsRotation() => visuals.transform.rotation;
 
+    public void SetColor(Color color)
+    {
+        visuals.GetComponentInChildren<Image>().color = color;
+    }
 }

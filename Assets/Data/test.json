@@ -7,18 +7,19 @@
       "arrows": [
         {
           "text": "",
-          "positionX": -1461.7937,
-          "positionY": -213.08902,
-          "positionZ": -240.11351,
-          "rotationX": 0.0461965725,
-          "rotationY": -0.760318458,
-          "rotationZ": 0.0544038862,
+          "positionX": -1461.79407,
+          "positionY": -213.088333,
+          "positionZ": -240.112732,
+          "rotationX": 0.04619655,
+          "rotationY": -0.7603183,
+          "rotationZ": 0.05440393,
           "rotationW": 0.6456177,
           "scaleX": 2.81211662,
           "scaleY": 2.81211662,
           "scaleZ": 2.81211615,
           "destinationId": 2,
-          "isHidden": false
+          "isHidden": false,
+          "color": "05FF00FF"
         }
       ],
       "hotspots": [],
@@ -42,7 +43,8 @@
           "scaleY": 4.76211643,
           "scaleZ": 4.762116,
           "destinationId": 3,
-          "isHidden": false
+          "isHidden": false,
+          "color": "FFFFFFFF"
         }
       ],
       "hotspots": [],
@@ -54,25 +56,7 @@
       "voiceOverPath": "",
       "arrows": [],
       "hotspots": [],
-      "desks": [
-        {
-          "id": 0,
-          "employeeName": "Bahi Sawalha",
-          "employeeDepartment": "HR",
-          "employeeDescription": "HR Director",
-          "positionX": -231.745178,
-          "positionY": -184.022446,
-          "positionZ": -1467.74341,
-          "rotationX": -0.0373704247,
-          "rotationY": 0.9943545,
-          "rotationZ": -0.0587932765,
-          "rotationW": -0.08003822,
-          "scaleX": 0.9339723,
-          "scaleY": 0.9339724,
-          "scaleZ": 0.933972359,
-          "isHidden": false
-        }
-      ]
+      "desks": []
     },
     {
       "id": 4,
@@ -92,7 +76,8 @@
           "scaleY": 4.937117,
           "scaleZ": 4.937117,
           "destinationId": 3,
-          "isHidden": false
+          "isHidden": false,
+          "color": "FFFFFFFF"
         },
         {
           "text": "",
@@ -107,7 +92,8 @@
           "scaleY": 2.81211662,
           "scaleZ": 2.81211615,
           "destinationId": 5,
-          "isHidden": false
+          "isHidden": false,
+          "color": "FFFFFFFF"
         }
       ],
       "hotspots": [],
@@ -131,7 +117,8 @@
           "scaleY": 2.81211662,
           "scaleZ": 2.81211615,
           "destinationId": 4,
-          "isHidden": false
+          "isHidden": false,
+          "color": "FFFFFFFF"
         },
         {
           "text": "",
@@ -146,7 +133,8 @@
           "scaleY": 2.81211662,
           "scaleZ": 2.81211615,
           "destinationId": 6,
-          "isHidden": false
+          "isHidden": false,
+          "color": "FFFFFFFF"
         }
       ],
       "hotspots": [],
@@ -170,7 +158,8 @@
           "scaleY": 2.81211662,
           "scaleZ": 2.81211615,
           "destinationId": 5,
-          "isHidden": false
+          "isHidden": false,
+          "color": "FFFFFFFF"
         },
         {
           "text": "",
@@ -185,7 +174,8 @@
           "scaleY": 5.06211662,
           "scaleZ": 5.06211567,
           "destinationId": 7,
-          "isHidden": false
+          "isHidden": false,
+          "color": "FFFFFFFF"
         }
       ],
       "hotspots": [],
@@ -209,7 +199,8 @@
           "scaleY": 6.86211538,
           "scaleZ": 6.86211443,
           "destinationId": 8,
-          "isHidden": false
+          "isHidden": false,
+          "color": "FFFFFFFF"
         }
       ],
       "hotspots": [],
@@ -233,7 +224,8 @@
           "scaleY": 2.81211662,
           "scaleZ": 2.81211615,
           "destinationId": 9,
-          "isHidden": false
+          "isHidden": false,
+          "color": "FFFFFFFF"
         }
       ],
       "hotspots": [],
@@ -257,7 +249,8 @@
           "scaleY": 2.81211662,
           "scaleZ": 2.81211615,
           "destinationId": 10,
-          "isHidden": false
+          "isHidden": false,
+          "color": "FFFFFFFF"
         }
       ],
       "hotspots": [],
@@ -281,7 +274,8 @@
           "scaleY": 2.81211662,
           "scaleZ": 2.81211615,
           "destinationId": 9,
-          "isHidden": false
+          "isHidden": false,
+          "color": "FFFFFFFF"
         }
       ],
       "hotspots": [
