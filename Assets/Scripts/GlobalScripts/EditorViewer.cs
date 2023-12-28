@@ -5,10 +5,17 @@ using UnityEngine;
 public class EditorViewer : MonoBehaviour
 {
     public bool isViewer;
-    public static EditorViewer instance;
+    public static EditorViewer instance {get;  private set; }
 
     void Awake()
     {
-        instance = this;
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
     }
 }

@@ -8,7 +8,6 @@ public class LoadLocationButton : MonoBehaviour
 {
     [SerializeField] TMP_InputField idInputField;
     [SerializeField] APITest aPITest;
-
     Button button;
     void Start()
     {
@@ -18,8 +17,7 @@ public class LoadLocationButton : MonoBehaviour
 
     void LoadLocation()
     {
-        aPITest.GetData(int.Parse(idInputField.text));
-
-        transform.parent.gameObject.SetActive(false);
+        //aPITest.GetData(int.Parse(idInputField.text));
+        //transform.parent.gameObject.SetActive(false);
     }
 }

@@ -65,5 +65,6 @@ public class OpenImageButton : MonoBehaviour, IPointerDownHandler
     void FillInputField(string text)
     {
         inputField.text = text;
+        Debug.Log($"opened url: {text}");
     }
 }

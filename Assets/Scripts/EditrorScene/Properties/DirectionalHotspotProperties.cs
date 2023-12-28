@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using TS.ColorPicker;
 
 public class DirectionalHotspotProperties : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class DirectionalHotspotProperties : MonoBehaviour
     [SerializeField] InputField inputField_3;
     [SerializeField] Image colorImage;
     [SerializeField] Toggle toggle;
+    [SerializeField] ColorPicker colorPicker;
 
     void Start()
     {
@@ -43,8 +45,9 @@ public class DirectionalHotspotProperties : MonoBehaviour
         inputField_1.text = selectedObject.GetTitleText();
         inputField_2.text = selectedObject.destinationId.ToString();
         toggle.isOn = selectedObject.isHidden;
-        inputField_3.text = ColorUtility.ToHtmlStringRGBA(selectedObject.GetColor());
         colorImage.color = selectedObject.GetColor();
+        colorPicker.UpdateColor(selectedObject.GetColor());
+        //inputField_3.text = ColorUtility.ToHtmlStringRGBA(selectedObject.GetColor());
     }
 
     void DeactivateAllSiblings()

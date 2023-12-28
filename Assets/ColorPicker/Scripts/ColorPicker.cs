@@ -25,7 +25,7 @@ namespace TS.ColorPicker
         public UnityEvent<Color> OnSubmit;
         public UnityEvent OnCancel;
 
-        private InputColorChannels _inputRgb;
+        [SerializeField] private InputColorChannels _inputRgb;
         private Color _currentColor = Color.white;
         private Texture2D _screenTexture;
 
@@ -99,7 +99,7 @@ namespace TS.ColorPicker
         {
             gameObject.SetActive(enable);
         }
-        private void UpdateColor(Color color)
+        public void UpdateColor(Color color)
         {
             SetCurrentColor(color);
 

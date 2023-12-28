@@ -6,13 +6,15 @@ using UnityEngine;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 using System.Net.Http;
+using TMPro;
 
 public class APITest : MonoBehaviour
 {
     public CreateLocationTest createLocationTest;
     public TextAsset textFile;
-    string path = "Assets/Data/test.json";
-    //string path = "file:///C:/Unity%20Projects/Temp%20Project/Assets/Data/test.json";
+    //string path = "Assets/Data/test.json";
+    string path = "file:///C:/Unity%20Projects/Temp%20Project/Assets/Data/test.json";
+    //string path = "blob:http://localhost:57377/d01a4f77-66d7-4da0-ba39-219de733fb1e";
     string textFileURL = "https://gist.githubusercontent.com/MohammadQadomi/ea15ee944c3f78e91a5bfd7a1d12f169/raw/427ed025354c104f5f97f594b80b7fa1b529cc11/test.json";
 
     async void Start()
@@ -20,6 +22,8 @@ public class APITest : MonoBehaviour
         string temp;
         temp = await GetContents(textFileURL);
         Debug.Log(temp);
+        //path = AssetDatabase.GetAssetPath(textFile);
+        print($"json path: {path}");
     }
 
     [ContextMenu("Send Data")]
@@ -35,11 +39,11 @@ public class APITest : MonoBehaviour
 
     public void WriteFile(string data)
     {
-        //File.WriteAllText(path, data);
+        File.WriteAllText(path, data);
 
         // Make the file readable
-        var body = JsonConvert.DeserializeObject(data);
-        File.WriteAllText(path, body.ToString());
+        //var body = JsonConvert.DeserializeObject(data);
+        //File.WriteAllText(path, body.ToString());
     }
 
     [ContextMenu("Read file")]
@@ -51,26 +55,32 @@ public class APITest : MonoBehaviour
     }
 
     [ContextMenu("Get Data")]
-    public void GetData(int id)
+    public void GetData(int id, string _content="")
     {
-        Locations locations = GetAllData();
-        createLocationTest.NewLocation(locations.Find(id)); 
+        Locations locations = GetAllData(_content);
+        print($"Locations: {locations.locations[0].imagePath}");
+        print($"Finded Location: {locations.Find(id).imagePath}");
+        createLocationTest.NewLocation(locations.Find(id));
+
     }
 
     [ContextMenu("Get all data")]
-    public Locations GetAllData()
+    public Locations GetAllData(string _content="")
     {
         // Read the file
-        StreamReader reader = new StreamReader(path);
-        var temp = reader.ReadToEnd();
+        //StreamReader reader = new StreamReader(path);
+        //var temp = reader.ReadToEnd();
 
-        if (temp.Length <= 0) return null;
+        string temp = _content;// Read from the parameter
+        Debug.Log($"temp: {temp}");
+
+        if (temp?.Length <= 0) return null;
 
         var body = JSON.Parse(temp)["locations"];
 
-        Debug.Log(body);
+        Debug.Log($"Body: {body}");
 
-        reader.Close();
+        //reader.Close();
 
         Locations locations = new Locations();
 
@@ -112,4 +122,10 @@ public class APITest : MonoBehaviour
         }
     }
 
+    public void SetJsonUrl(TMP_InputField inputField)
+    {
+        path = inputField.text;
+        path.Insert(10, "/");
+        print($"json path: {path}");
+    }
 }

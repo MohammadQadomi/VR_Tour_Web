@@ -286,6 +286,7 @@ MonoBehaviour:
   OnCancel:
     m_PersistentCalls:
       m_Calls: []
+  _inputRgb: {fileID: 2196320315377014269}
 --- !u!1 &181038343669674345
 GameObject:
   m_ObjectHideFlags: 0
